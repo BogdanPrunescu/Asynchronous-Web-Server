@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "assert.h": "c",
+        "w_epoll.h": "c",
+        "util.h": "c",
+        "aio_abi.h": "c"
+    }
+}

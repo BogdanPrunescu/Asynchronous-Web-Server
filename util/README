@@ -1,0 +1,29 @@
+Nume: Prunescu Bogdan-Andrei
+Grupă: 321CA
+
+# Tema <3>
+
+Organizare
+-
+1. Explicație pentru structura creată (sau soluția de ansamblu aleasă):
+
+Pentru a rezolva aceasta tema m-am folosit de codul din sample-uri
+(epoll_echo_server.c si http_reply_once.c) plus exercitiul din laboratorul
+vechi de SO cu operatiile asincrone (kaio.c). In rest, a trebuit sa implementez
+trimiterea headerului si a fisierelor. In rest, am implementat citirea si
+scrierea non-blocanta. Consider ca am implementat un algoritm destul de ok, dar
+nu stiu daca ar exista un algoritm mai eficient. Cel mai greu lucru cred ca a
+fost partea de socketi non-blocanti pentru ca trebuia ca o conexiune sa retina
+multe variabile si stari atunci cand termina de citit/scris.
+
+Implementare
+
+Citirea requestului este asemanatoare cu cea din exemple, doar ca este
+non-blocanta deoarece apelez functia recv()/send() pana cand am citit tot.
+Daca nu am terminat de citit conexiunea mai are de trimis bytes, dar trebuie
+sa lase si alte conexiuni sa iti ruleze operatia.
+
+Pentru fisierele statice am apelat functia sendfile pana cand am trimis toti
+bitii, iar pentru cele dinamice am folosit functiie functii aio pentru citire
+si pentru scriere am folosit functia send impreuna cu toate bufferele in care
+s-au citit date din fisier.

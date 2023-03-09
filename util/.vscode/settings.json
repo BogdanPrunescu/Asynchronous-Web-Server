@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "w_epoll.h": "c",
+        "epoll.h": "c",
+        "libaio.h": "c",
+        "fcntl.h": "c",
+        "eventfd.h": "c",
+        "types.h": "c"
+    }
+}

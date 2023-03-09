@@ -1,0 +1,6 @@
+==23686== Memcheck, a memory error detector
+==23686== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==23686== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==23686== Command: ./aws
+==23686== Parent PID: 23684
+==23686== 

@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "array": "c",
+        "*.tcc": "c",
+        "string": "c",
+        "vector": "c",
+        "string_view": "c",
+        "functional": "c",
+        "limits": "c",
+        "ostream": "c",
+        "streambuf": "c",
+        "tuple": "c"
+    }
+}
